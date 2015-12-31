@@ -1,0 +1,16 @@
+# Generated object/assembly files
+*.o
+*.s
+*.isa
+*.amdil
+
+# Generated Python files
+*.pyc
+*.pyo
+MANIFEST
+dist/*
+
+
+# Vim backups
+._*
+
