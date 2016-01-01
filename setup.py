@@ -38,7 +38,7 @@ def main():
         ],
         packages=["clcc"],
         zip_safe=False,
-        scripts=os.path.join("bin", "clcc"))
+        scripts=[os.path.join("bin", "clcc")])
 
 
 if __name__ == '__main__':
