@@ -24,6 +24,8 @@ Active projects:
 
 - Apple ships an offline OpenCL compiler `openclc` for OS X with XCode. It compiles to portable bitcode for CPUs or GPUs, which is recognized by Apple drivers. Mac Developer library `documents how to use it <https://developer.apple.com/library/mac/samplecode/OpenCLOfflineCompilation/Introduction/Intro.html>`_.
 
+- AMD maintains `CLOC - OpenCL Offline Compiler <https://github.com/HSAFoundation/CLOC>`_ for compiling OpenCL kernels to HSAIL and BRIG formats.
+
 - Intel OpenCL SDK contains a `KernelBuilder`. However, it can not build kernels for devices which are not installed on the host system.
 
 - `Mali offline compiler <http://malideveloper.arm.com/resources/tools/mali-offline-compiler/>`_ can compile OpenCL shaders for ARM's OpenCL-enabled Mali devices and reports some statistics useful for performance optimization. However, it doesn't let you save the machine code for a kernel.
