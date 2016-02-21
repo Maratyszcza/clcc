@@ -55,7 +55,7 @@ device_option = parser.add_argument(
     "-d", "--device", dest="device", default=1, type=int,
     help="Target OpenCL device")
 include_option = parser.add_argument(
-    "-I", nargs="*", dest="include", action="append", default=[],
+    "-I", dest="include", action="append",
     help="Include directory paths")
 parser.add_argument(
     "-o", dest="output",
