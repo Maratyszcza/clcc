@@ -244,12 +244,11 @@ def compile_code(cl, command, input_filename, output_filename, include_paths, de
         status = cl.build_program(program, device, " ".join(clflags))
     else:
         status = cl.compile_program(program, device, " ".join(clflags))
-    if status != 0:
-        build_log = cl.get_program_build_log(program, device)
-        if build_log:
-            print(build_log)
-        else:
-            print("Program build failed")
+    build_log = cl.get_program_build_log(program, device)
+    if build_log:
+        print(build_log)
+    elif status != 0:
+        print("Program build failed")
 
     if command == "check":
         if output_filename is not None:
